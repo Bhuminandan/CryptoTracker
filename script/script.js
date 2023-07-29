@@ -4,12 +4,19 @@ let mobThemeBtn = document.querySelector(".mobile-header__switch-btn>input")
 
 // let swithAfterElement = document.styleSheets[0].cssRules[1];
 
+let tableTotalValume = document.querySelector(".table-total__valume");
+let tableTotalCap = document.querySelector(".table-market__cap");
 themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+
+    tableTotalValume.style.color = "#6c6c6c";
+    tableTotalCap.style.color = "#6c6c6c";
 })
 
 mobThemeBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+    tableTotalValume.style.color = "#fff";
+    tableTotalCap.style.color = "#fff";
 })
 
 
@@ -82,10 +89,10 @@ mainHeaderRight.addEventListener("click", () => {
                                     <div class="table-price">$ ${singleData.current_price}</div>
                                 </td>
                                 <td>
-                                    <div class="total__valume">Total Valume: ${singleData.total_volume}</div>
+                                    <div class="table-total__valume">Total Valume: ${singleData.total_volume}</div>
                                 </td>
                                 <td>
-                                    <div class="market__cap">Market Cap:$ ${singleData.market_cap}</div>
+                                    <div class="table-market__cap">Market Cap:$ ${singleData.market_cap}</div>
                                 </td>`
             tr.innerHTML = trInnerHtml;
             // Get the elements inside the card

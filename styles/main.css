@@ -198,6 +198,7 @@ td {
   border: 2px solid #7cc678;
   color: #7cc678;
   font-weight: 600;
+  font-size: 16px;
 }
 
 .table-price {
@@ -209,12 +210,12 @@ td {
 
 .table-total__valume {
   font-size: 15px;
-  color: #fff;
+  color: #6c6c6c;
   font-weight: 600;
 }
 
 .table-market__cap {
   font-size: 15px;
-  color: #fff;
+  color: #6c6c6c;
   font-weight: 600;
 }

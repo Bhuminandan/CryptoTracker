@@ -70,7 +70,7 @@ mainHeaderRight.addEventListener("click", () => {
                                         />
                                     </div>
                                     <div class="table-main__grid-card-top-right">
-                                        <h5>${singleData.id}</h5>
+                                        <h5>${singleData.symbol.toUpperCase()}</h5>
                                         <p>${singleData.name}</p>
                                     </div>
                                     </div>
@@ -85,7 +85,7 @@ mainHeaderRight.addEventListener("click", () => {
                                     <div class="total__valume">Total Valume: ${singleData.total_volume}</div>
                                 </td>
                                 <td>
-                                    <div class="market__cap">Market Cap: ${singleData.market_cap}</div>
+                                    <div class="market__cap">Market Cap:$ ${singleData.market_cap}</div>
                                 </td>`
             tr.innerHTML = trInnerHtml;
             // Get the elements inside the card
@@ -125,7 +125,7 @@ function defaultPageGridData () {async function getData() {
                                                 <img src="${singleObj.image}" alt="icon imag" />
                                                 </div>
                                                 <div class="main__grid-card-top-right">
-                                                <h5>${singleObj.id}</h5>
+                                                <h5>${singleObj.symbol.toUpperCase()}</h5>
                                                 <p>${singleObj.name}</p>
                                                 </div>
                                             </div>
@@ -133,7 +133,7 @@ function defaultPageGridData () {async function getData() {
                                                 <div class="percentage">${singleObj.price_change_percentage_24h} %</div>
                                                 <div class="price">$ ${singleObj.current_price}</div>
                                                 <div class="total__valume">Total Valume: ${singleObj.total_volume}</div>
-                                                <div class="market__cap">Market Cap: ${singleObj.market_cap}</div>
+                                                <div class="market__cap">Market Cap:$ ${singleObj.market_cap}</div>
                                             </div>`
                     gridElement.innerHTML = innerHtmlCard;
 

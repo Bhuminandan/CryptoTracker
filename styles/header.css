@@ -54,7 +54,7 @@
 
 .mobile-header__list-btn a {
   text-decoration: none;
-  color: var(--light-clr-);
+  color: #fff;
   background-color: #4a81e3;
   padding: 10px 30px;
   border-radius: 20px;
@@ -172,7 +172,7 @@
 }
 .header__list-btn a {
   text-decoration: none;
-  color: var(--light-clr-);
+  color: #fff;
   background-color: #4a81e3;
   padding: 8px 20px;
   border-radius: 20px;

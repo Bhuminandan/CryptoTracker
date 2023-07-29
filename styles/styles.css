@@ -10,6 +10,7 @@
 :root {
   --dark-clr-: #111111;
   --light-clr-: #f6f6f6;
+  --card-bg-clr-: #1b1b1b;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 .dark-mode {
   --light-clr-: #111111;
   --dark-clr-: #f6f6f6;
+  --card-bg-clr-: #f6f6f6;
 }
 
 /* width */

@@ -48,9 +48,11 @@
   width: 320px;
   height: 340px;
   border-radius: 15px;
-  background-color: #1b1b1b;
+  background-color: var(--card-bg-clr-);
   padding: 30px;
   margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .main__grid-card-top {
@@ -144,6 +146,7 @@ table {
   margin: 0 auto;
   display: block;
   overflow-x: auto;
+  border-collapse: collapse;
 }
 
 table::-webkit-scrollbar {
@@ -151,10 +154,11 @@ table::-webkit-scrollbar {
 }
 
 td {
-  padding: 20px 50px;
+  padding: 20px 30px;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
+  border-bottom: 1px solid #6f6f6f;
 }
 
 .table-main__grid-card-top {
@@ -196,6 +200,7 @@ td {
   font-size: 18px;
   color: #7cc678;
   font-weight: 600;
+  margin-left: -20px;
 }
 
 .table-total__valume {

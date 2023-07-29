@@ -60,7 +60,7 @@ mainHeaderRight.addEventListener("click", () => {
         dataList.forEach((singleData) => {
             let tr = document.createElement("tr");
             tr.classList.add("tr");
-
+            
             let trInnerHtml = `<td>
                                     <div class="table-main__grid-card-top">
                                     <div class="table-main__grid-card-top-left">
@@ -103,37 +103,6 @@ mainHeaderRight.addEventListener("click", () => {
     }
 
 })
-
-
-/* <tr class="tr">
-            <td>
-              <div class="table-main__grid-card-top">
-                <div class="table-main__grid-card-top-left">
-                  <img
-                    src="https://images.unsplash.com/photo-1536739120124-af891f029e99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                    alt="icon imag"
-                  />
-                </div>
-                <div class="table-main__grid-card-top-right">
-                  <h5>BTC</h5>
-                  <p>Bitcoin</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="table-percentage">24 %</div>
-            </td>
-            <td>
-              <div class="table-price">$ 23</div>
-            </td>
-            <td>
-              <div class="total__valume">Total Valume: 123.13,33,2,2</div>
-            </td>
-            <td>
-              <div class="market__cap">Market Cap: 123.13,33,2,2</div>
-            </td>
-          </tr> */
-
 
 function defaultPageGridData () {async function getData() {
                 let url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en";
@@ -184,5 +153,28 @@ function defaultPageGridData () {async function getData() {
 
 }}
 defaultPageGridData ();
+
+const checkbox = document.getElementById("toggle");
+  const switchElement = document.querySelector(".switch");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      switchElement.style.setProperty("--pseudo-left", "20px");
+    } else {
+      switchElement.style.setProperty("--pseudo-left", "0");
+    }
+  });
+
+
+  const mobilecheckbox = document.getElementById("toggle");
+  const mobileswitchElement = document.querySelector(".mobile-switch");
+
+  mobilecheckbox.addEventListener("change", function () {
+    if (mobilecheckbox.checked) {
+        mobileswitchElement.style.setProperty("--pseudo-left-", "20px");
+    } else {
+        mobileswitchElement.style.setProperty("--pseudo-left-", "0");
+    }
+  });
 
 

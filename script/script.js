@@ -88,7 +88,7 @@ mainHeaderRight.addEventListener("click", () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="table-percentage">${singleData.price_change_percentage_24h} %</div>
+                                    <div class="table-percentage">${singleData.price_change_percentage_24h.toFixed(2)} %</div>
                                 </td>
                                 <td>
                                     <div class="table-price">$ ${singleData.current_price}</div>
@@ -154,7 +154,7 @@ function defaultPageGridData() {
                                                 </div>
                                             </div>
                                             <div class="main__grid-card-bottom">
-                                                <div class="percentage">${singleObj.price_change_percentage_24h} %</div>
+                                                <div class="percentage">${singleObj.price_change_percentage_24h.toFixed(2)} %</div>
                                                 <div class="price">$ ${singleObj.current_price}</div>
                                                 <div class="total__valume">Total Valume: ${singleObj.total_volume}</div>
                                                 <div class="market__cap">Market Cap:$ ${singleObj.market_cap}</div>
